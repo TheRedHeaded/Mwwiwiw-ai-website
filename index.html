@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pookie Café ☕</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f8f5f2;
+            color: #3e2c23;
+        }
+
+        header {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+            url("https://images.unsplash.com/photo-1509042239860-f550ce710b93") center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+        }
+
+        header p {
+            margin: 20px 0;
+            font-size: 1.2rem;
+        }
+
+        header button {
+            padding: 12px 30px;
+            border: none;
+            background: #c7a17a;
+            color: #3e2c23;
+            font-size: 1rem;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 70px 10%;
+        }
+
+        .about {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .about h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+
+        .menu {
+            background: #fff;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .menu h2 {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 40px;
+        }
+
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+
+        .menu-card {
+            background: #f8f5f2;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .menu-card i {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #c7a17a;
+        }
+
+        .menu-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 20px;
+            transition: transform 0.4s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #3e2c23;
+            color: white;
+            padding: 40px 10%;
+            text-align: center;
+        }
+
+        footer i {
+            margin: 10px;
+            font-size: 1.5rem;
+            color: #c7a17a;
+            cursor: pointer;
+        }
+
+        @media(max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>Pookie Café ☕</h1>
+        <p>Where every sip feels like home</p>
+        <button>Visit Us</button>
+    </div>
+</header>
+
+<section class="about">
+    <div>
+        <h2>Our Story</h2>
+        <p>
+            At Pookie Café, we serve handcrafted coffee brewed with love.
+            A cozy place for hearts, conversations, and warm cups.
+        </p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="coffee">
+</section>
+
+<section class="menu">
+    <h2>Our Favorites</h2>
+    <div class="menu-items">
+        <div class="menu-card">
+            <i class="fa-solid fa-mug-hot"></i>
+            <h3>Espresso</h3>
+            <p>Strong & bold</p>
+        </div>
+        <div class="menu-card">
+            <i class="fa-solid fa-coffee"></i>
+            <h3>Latte</h3>
+            <p>Smooth & creamy</p>
+        </div>
+        <div class="menu-card">
+            <i class="fa-solid fa-ice-cream"></i>
+            <h3>Mocha</h3>
+            <p>Chocolatey delight</p>
+        </div>
+        <div class="menu-card">
+            <i class="fa-solid fa-heart"></i>
+            <h3>Love Brew</h3>
+            <p>Our signature ☕</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 style="text-align:center; font-family:'Playfair Display'; margin-bottom:30px;">
+        Café Vibes
+    </h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814">
+        <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096">
+    </div>
+</section>
+
+<footer>
+    <p>Follow us & feel the vibe 💛</p>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook"></i>
+</footer>
+
+</body>
+</html>
